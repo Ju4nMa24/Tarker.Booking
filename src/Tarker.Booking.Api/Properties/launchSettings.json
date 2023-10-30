@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:42926",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "",
+      "applicationUrl": "http://localhost:5126",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "local", //Local: Usamos los secretos locales sino usamos Azure KeyVault
+        "clientId": "3ee76820-98e3-4775-bfe0-d8bd21c2ce22",
+        "tenantId": "67e3a935-d701-45f9-9647-3746aa33f5eb",
+        "clientSecret": "73u8Q~wfvSMtT6-EbryGgyUBUSVXWxRxfsi.iaqf"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "local", //Local: Usamos los secretos locales sino usamos Azure KeyVault
+        "clientId": "3ee76820-98e3-4775-bfe0-d8bd21c2ce22",
+        "tenantId": "67e3a935-d701-45f9-9647-3746aa33f5eb",
+        "clientSecret": "73u8Q~wfvSMtT6-EbryGgyUBUSVXWxRxfsi.iaqf"
+      }
+    }
+  }
+}

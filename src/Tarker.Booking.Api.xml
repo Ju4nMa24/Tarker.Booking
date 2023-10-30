@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tarker.Booking.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Tarker.Booking.Api.Controllers.BookingController">
+            <summary>
+            This controller is used to booking.
+            </summary>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.BookingController.Create(Tarker.Booking.Application.DataBase.Booking.Commands.CreateBooking.CreateBookingModel,Tarker.Booking.Application.DataBase.Booking.Commands.CreateBooking.ICreateBookingCommand,FluentValidation.IValidator{Tarker.Booking.Application.DataBase.Booking.Commands.CreateBooking.CreateBookingModel})">
+            <summary>
+            This method is used to booking create.
+            </summary>
+            <param name="model"></param>
+            <param name="command"></param>
+            <param name="validator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.BookingController.GetAll(Tarker.Booking.Application.DataBase.Booking.Queries.GetAllBooking.IGetAllBookingQuery)">
+            <summary>
+            This method is used to get all booking.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.BookingController.GetBookingByDocument(System.String,Tarker.Booking.Application.DataBase.Booking.Queries.GetBookingByDocument.IGetBookingByDocumentQuery)">
+            <summary>
+            This method is used to get all booking by document number.
+            </summary>
+            <param name="documentNumber"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.BookingController.GetBookingByDocument(System.String,Tarker.Booking.Application.DataBase.Booking.Queries.GetBookingByType.IGetBookingByTypeQuery)">
+            <summary>
+            This method is used to get all booking by type.
+            </summary>
+            <param name="type"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tarker.Booking.Api.Controllers.CustomerController">
+            <summary>
+            This controller is used to customers.
+            </summary>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.CustomerController.Create(Tarker.Booking.Application.DataBase.Customer.Commands.CreateCustomer.CreateCustomerModel,Tarker.Booking.Application.DataBase.Customer.Commands.CreateCustomer.ICreateCustomerCommand,FluentValidation.IValidator{Tarker.Booking.Application.DataBase.Customer.Commands.CreateCustomer.CreateCustomerModel})">
+            <summary>
+            This method is used to customer create.
+            </summary>
+            <param name="model"></param>
+            <param name="command"></param>
+            <param name="validator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.CustomerController.Update(Tarker.Booking.Application.DataBase.Customer.Commands.UpdateCustomer.UpdateCustomerModel,Tarker.Booking.Application.DataBase.Customer.Commands.UpdateCustomer.IUpdateCustomerCommand,FluentValidation.IValidator{Tarker.Booking.Application.DataBase.Customer.Commands.UpdateCustomer.UpdateCustomerModel})">
+            <summary>
+            This method is used to customer update.
+            </summary>
+            <param name="model"></param>
+            <param name="command"></param>
+            <param name="validator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.CustomerController.Delete(System.String,Tarker.Booking.Application.DataBase.Customer.Commands.DeleteCustomer.IDeleteCustomerCommand)">
+            <summary>
+            This method is used to customer delete.
+            </summary>
+            <param name="customerId"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.CustomerController.GetAll(Tarker.Booking.Application.DataBase.Customer.Queries.GetAllCustomer.IGetAllCustomerQuery)">
+            <summary>
+            This method is used to get all customer.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.CustomerController.GetById(System.String,Tarker.Booking.Application.DataBase.Customer.Queries.GetCustomerById.IGetCustomerByIdQuery)">
+            <summary>
+            This method is used to get all customer by customer id.
+            </summary>
+            <param name="customerId"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.CustomerController.GetCustomerByDocument(System.String,Tarker.Booking.Application.DataBase.Customer.Queries.GetCustomerByDocument.IGetCustomerByDocumentQuery)">
+            <summary>
+            This method is used to get all customer by document.
+            </summary>
+            <param name="documentNumber"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tarker.Booking.Api.Controllers.NotificationController">
+            <summary>
+            This controller is used to notification by twilio API.
+            </summary>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.NotificationController.Create(Tarker.Booking.Domain.Models.SendGrid.SendGridRequestModel,Tarker.Booking.Application.External.SendGridEmail.ISendGridEmailService)">
+            <summary>
+            This method is used to email send with Twilio API.
+            </summary>
+            <param name="model"></param>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tarker.Booking.Api.Controllers.UserController">
+            <summary>
+            This controller is used to users.
+            </summary>
+        </member>
+        <member name="F:Tarker.Booking.Api.Controllers.UserController._insightsService">
+            <summary>
+            Service by Application Insights.
+            </summary>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.#ctor(Tarker.Booking.Application.External.ApplicationInsights.IInsertApplicationInsightsService)">
+            <summary>
+            Constructor DI.
+            </summary>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.Create(Tarker.Booking.Application.DataBase.User.Commands.CreateUser.CreateUserModel,Tarker.Booking.Application.DataBase.User.Commands.CreateUser.ICreateUserCommand,FluentValidation.IValidator{Tarker.Booking.Application.DataBase.User.Commands.CreateUser.CreateUserModel})">
+            <summary>
+            This method is used to user create.
+            </summary>
+            <param name="model"></param>
+            <param name="command"></param>
+            <param name="validator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.Update(Tarker.Booking.Application.DataBase.User.Commands.UpdateUser.UpdateUserModel,Tarker.Booking.Application.DataBase.User.Commands.UpdateUser.IUpdateUserCommand,FluentValidation.IValidator{Tarker.Booking.Application.DataBase.User.Commands.UpdateUser.UpdateUserModel})">
+            <summary>
+            This method is used to user update.
+            </summary>
+            <param name="model"></param>
+            <param name="command"></param>
+            <param name="validator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.UpdatePassword(Tarker.Booking.Application.DataBase.User.Commands.UpdateUserPassword.UpdateUserPasswordModel,Tarker.Booking.Application.DataBase.User.Commands.UpdateUserPassword.IUpdateUserPasswordCommand,FluentValidation.IValidator{Tarker.Booking.Application.DataBase.User.Commands.UpdateUserPassword.UpdateUserPasswordModel})">
+            <summary>
+            This method is used to user update.
+            </summary>
+            <param name="model"></param>
+            <param name="command"></param>
+            <param name="validator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.Delete(System.String,Tarker.Booking.Application.DataBase.User.Commands.DeleteUser.IDeleteUserCommand)">
+            <summary>
+            This method is used to user delete.
+            </summary>
+            <param name="userId"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.GetAll(Tarker.Booking.Application.DataBase.User.Queries.GetAllUser.IGetAllUserQuery)">
+            <summary>
+            This method is used to get all user.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.GetById(System.String,Tarker.Booking.Application.DataBase.User.Queries.GetUserById.IGetUserByIdQuery)">
+            <summary>
+            This method is used to get all user by user id.
+            </summary>
+            <param name="userId"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tarker.Booking.Api.Controllers.UserController.GetByUserNamePassword(System.String,System.String,Tarker.Booking.Application.DataBase.User.Queries.GetUserByUserNameAndPassword.IGetUserByUserNameAndPasswordQuery,FluentValidation.IValidator{System.ValueTuple{System.String,System.String}},Tarker.Booking.Application.External.Jwt.IGetTokenJwtService)">
+            <summary>
+            This method is used to get all user by username and password.
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="query"></param>
+            <param name="validator"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tarker.Booking.Api.DIConfigurations.DependencyInjectionService">
+            <summary>
+            DI.
+            </summary>
+        </member>
+        <member name="M:Tarker.Booking.Api.DIConfigurations.DependencyInjectionService.AddWebApi(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Constructor DI.
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
